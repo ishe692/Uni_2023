@@ -1,0 +1,8 @@
+Part 4 project:
+Me and Kullam Spader
+The Idea is embedded systems in gyming equipment
+The proposed ideas are a muscle inpulse sensor with embedded systems
+or a weight pad with embedded systems
+Research is to be doen into both
+
+Should have a meeting week 1 to allocate roles.
