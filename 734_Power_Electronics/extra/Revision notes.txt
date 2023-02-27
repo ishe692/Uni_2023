@@ -1,0 +1,42 @@
+Some revision of some concepts:
+
+P = I^2*R = V^2/R = IrmsVrmscos(theta)
+S = Irms*Vrms = Irms^2*Z = Vrms^2/Z
+Q = Irms*Vrms*sin(theta) = Irms^2*X = Vrms^2/X
+
+rms for duty cycle square wave: = A*sqrt(D)
+average = A*D
+
+rms for triangle wave: = A/sqrt(3)
+average = A/2
+
+rms for sin wave: = A/sqrt(2)
+average = 2*A/pi
+
+inverting transfer function = -R2/R1
+non-inverting transfer function = 1+R2/R1
+
+Low pass filter transfer function:
+
+        wn^2
+-------------------
+s^2 + wn*s/Q + wn^2
+
+Hz to rads:
+f = w/2pi
+
+some matlab code for transfer functions:
+
+wn = 100;
+Q = 10
+top  = [1 wn^2];
+bottom = [1 wn/Q wn^2];
+sys = tf(top,bottom);
+bode(sys)
+pole(sys)
+
+a capacitor and an inductor can cancel each other out through resonance
+when the reactance of each is equal and opposite and they are in parrallel
+resulting in a net 0 current through their branch. (180degree phase difference)
+
+
