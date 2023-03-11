@@ -1,0 +1,73 @@
+%----------------------------------------------------------------------------------------
+%   Status Report Template
+%   ----------------------
+%   This report can be a MAXIMUM of one page.
+%   Submit your report to the Canvas dropbox.
+%----------------------------------------------------------------------------------------
+
+% Do not modify any of these settings
+\documentclass[11pt,a4paper]{article}
+\usepackage{parskip}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage{hyperref}
+
+% Enter your name and UPI here
+% Your UPI is your university login: three to four letters followed by three numbers (e.g. jdoe123)
+\newcommand{\name}{John Doe}
+\newcommand{\upi}{jdoe001}
+
+\hypersetup{
+    pdftitle={Capstone Project Status Report},
+    pdfsubject={ELECTENG/COMPSYS/SOFTENG 770},
+    pdfauthor={\name}
+}
+
+\begin{document}
+
+\section*{Status report for \name{} [\upi]}
+
+% Replace the following three sentences with your content
+\textbf{What have you achieved in the past two weeks?}
+
+I have worked on the Web API interface over the last two weeks. My job was to send HTTP requests with the data from the scales to the web server. I have achieved the following tasks:
+
+\begin{itemize}
+
+\item Designed the overall process for linking animals to their weights (together with Jane Doe), plus worked out what data we would require from the server to make this happen.
+
+\item Worked with the web server development team to decide what web API methods are needed and what data they would contain.
+
+\item I have written some functions for sending data to the web server. These currently use mock data.
+
+\item Added some simple unit tests to show the code works and that the server receives the correct data.
+
+\end{itemize}
+
+\textbf{What are you planning to do in the next two weeks?}
+
+In the next two weeks, we plan to finish the web interface and ensure the data flow from end to end. I will work on the following tasks:
+
+\begin{itemize}
+\item Integrating my code with the code for reading the weights. I also need to add a test to show the process works.
+
+\item Add the missing methods to ensure we receive animal details from the web API and pass the data through to the weight-sending methods.
+
+\item Test the system end-to-end (together with the hardware and web API.)
+
+
+\end{itemize}
+
+\textbf{What issues have you encountered?}
+
+The main issues have been with getting everything to work together. Some of our team members are busy with assignments for other courses and still need to build their parts. This means we can't see the data flowing from the scales to the web API yet. The worst person is Jack Doe, as we need him to finish the components for converting the electrical signal to a digital signal. Janet Doe will start to work with him to complete the parts.
+
+The web API is also causing problems. Jane Doe built the initial API, but the web server team changed the data requirements. I will need to change my code to match the new requirements. These changes are small, but I am worried that the web team will make more changes, and I will need to keep changing my code in response. This makes it very hard to say I'm done, as they changed their requirements three times.
+
+% Do not modify any of the lines below
+~\vfill
+
+\noindent \textit{Generated \today}
+
+
+
+\end{document}

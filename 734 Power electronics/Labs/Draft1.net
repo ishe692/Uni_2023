@@ -1,0 +1,13 @@
+* C:\Users\jeffr\Documents\GitHub\Uni_2023\734 Power electronics\Labs\Draft1.asc
+L1 Iin 0 1µ
+C1 Iin 0 159µ
+R1 Iin 0 12
+I1 0 Iin SINE(0 1 1k)
+L2 Iin2 0 1µ
+C2 Iin2 0 1µ
+R2 Iin2 0 12
+I2 0 Iin2 SINE(0 1 1k)
+.tran 5m
+;tran 5m
+.backanno
+.end
